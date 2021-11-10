@@ -1,0 +1,16 @@
+<div class="card-list-container">
+    <div class="person-container d-flex" *ngFor="let list of listData |sort: 'fullname': false; index as i">
+        <div class="person-content">
+            <i class="fa fa-user fa-2x"></i>
+            <div class="fullname-container">
+                <span>{{list.fullname}}</span>
+            </div>
+            <div class="username-container">
+                <span>{{list.username}}</span>
+            </div>
+        </div>
+        <div class="btn-container">
+            <i class="fa fa-trash fa-2x remove-person" (click)="removePerson(list)"></i>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+
+<div class="main-container">
+
+  <div class="icon-container">
+      <div class="p-2 w-100 user-container" (click)="addPeople()" [ngClass]="activator == true ? 'active' : '' ">
+          <i class="fa fa-user-plus fa-2x" ></i>
+          <br>
+          <span>Add Person</span>
+      </div>
+      <div class="p-2 w-100 list-container" (click)="toList()" [ngClass]="activator == false ? 'active' : '' ">
+          <i class="fa fa-list fa-2x" ></i>
+          <br>
+          <span>List </span>
+      </div>
+  </div>
+  <router-outlet></router-outlet>
+  
+</div>
+

@@ -1,0 +1,75 @@
+.card-container{
+    height: 510px;
+    overflow-y: auto;
+    width: 400px;
+    padding: 40px;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgb(0 0 0 / 60%);
+    border-radius: 10px;
+    text-align: center;
+}
+.user-box{
+    display: flex;
+}
+
+.card-container .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+
+  ::ng-deep.card-container label,
+  ::ng-deep.card-container input.ng-pristine ~ label{
+    position: absolute;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  ::ng-deep.card-container input.ng-touched input:invalid ~ label
+    {
+    margin: -20px 0; 
+    color: #e61010 ;
+    font-size: 12px;
+  }
+  
+  ::ng-deep.card-container input:focus ~ label,
+  ::ng-deep.card-container input:valid ~ label
+   {
+    margin: -20px 0; 
+    color: #03e9f4 !important;
+    font-size: 12px;
+  }
+  
+  ::ng-deep.is-invalid input.ng-touched ~ label
+    {
+    margin: -20px 0; 
+    color: #e61010 !important ;
+    font-size: 12px;
+  }
+
+  .submit-button, .clear-button{
+      text-decoration: none;
+  }
+  a.disabled {
+    cursor: not-allowed;
+    color: #435364;
+  }
+
+  .error-msg{
+    display: block;
+    position: absolute;
+    padding: 10px 0;
+    margin: -20px 8em;
+    color: #e61010 !important ;
+    font-size: 12px;
+  }
+  

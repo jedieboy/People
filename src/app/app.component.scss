@@ -1,0 +1,34 @@
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+.icon-container{
+    width: 400px;
+    margin: 4em 0 2em 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-container,
+.list-container
+{
+    cursor: pointer;
+}
+.user-container.active,
+.list-container.active
+{
+    border-bottom: 3px solid;
+}
+
+.user-container:hover,
+.list-container:hover
+{
+   color: rgb(88 99 255 / 50%);
+}
